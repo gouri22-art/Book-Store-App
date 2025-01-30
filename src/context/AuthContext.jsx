@@ -1,11 +1,11 @@
 import { Children } from "react";
 import { createContext,useState } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 export const AuthProvider = ({children}) => {
     const[isAuthenticated, setIsAuthenticated] = useState(false);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const login = async(credentials)=>{
         const response = await fetch("https://beryl-ember-havarti.glitch.me/login",{
@@ -37,3 +37,5 @@ export const AuthProvider = ({children}) => {
     );
 };
 
+
+export { AuthContext};
