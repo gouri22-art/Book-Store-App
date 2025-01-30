@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import {AuthContext} from "../context/AuthContext";
-import "styles/styles.css";
+import "../styles/styles.css";
 
 const Login = () =>{
 
